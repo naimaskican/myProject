@@ -263,7 +263,23 @@ a.skip:focus, a.skip:active {
         </header>
         
         <main id="main" tabindex="-1">
-            <h1>Stay Tuned....Coming soon</h1>
+            <h1>Tab panel with manual Selection</h1>
+		<div class="tabpanelContainer" id="tabpanelContainer">
+		     <div class="tablist" role="tablist">
+			<button type="button" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Tab1</button>
+			<button type="button" role="tab" aria-selected="false" aria-controls="panel2" tabindex="-1">Tab2</button>
+			<button type="button" role="tab" aria-selected="false" aria-controls="panel3" tabindex="-1">Tab3</button>
+		     </div>
+			<div role="tabpanel" tabindex="0" id="panel1">
+				<p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>
+			</div>
+			<div role="tabpanel" tabindex="0" id="panel2">
+				<p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>
+			</div>
+			<div role="tabpanel" tabindex="0" id="panel3">
+				<p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>	
+			</div>
+		</div>
         <!-- <p>iuyfdfiouy niuytdu dyu87t6resxdch tdy876rdhj trdfyh</p>
         <button class="bigger">Make Me Bigger</button>
         <script src="functions.js"></script> -->
