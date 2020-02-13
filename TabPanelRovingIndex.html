@@ -265,18 +265,18 @@ a.skip:focus, a.skip:active {
         <main id="main" tabindex="-1">
             <h1>Tab panel with manual Selection</h1>
 		<div class="tabpanelContainer" id="tabpanelContainer">
-		     <div class="tablist" role="tablist">
-			<button type="button" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Tab1</button>
-			<button type="button" role="tab" aria-selected="false" aria-controls="panel2" tabindex="-1">Tab2</button>
-			<button type="button" role="tab" aria-selected="false" aria-controls="panel3" tabindex="-1">Tab3</button>
+		     <div class="tablist" role="tablist" aria-label="Demo">
+			<button type="button" role="tab" aria-selected="true" aria-controls="panel1" id="tab1">Tab1</button>
+			<button type="button" role="tab" aria-selected="false" aria-controls="panel2" id="tab2" tabindex="-1">Tab2</button>
+			<button type="button" role="tab" aria-selected="false" aria-controls="panel3" id="tab3" tabindex="-1">Tab3</button>
 		     </div>
-			<div role="tabpanel" tabindex="0" id="panel1">
+			<div role="tabpanel" tabindex="0" id="panel1" aria-labelledby="tab1">
 				<p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>
 			</div>
-			<div role="tabpanel" tabindex="0" id="panel2">
+			<div role="tabpanel" tabindex="0" id="panel2" aria-labelledby="tab2" hidden>
 				<p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>
 			</div>
-			<div role="tabpanel" tabindex="0" id="panel3">
+			<div role="tabpanel" tabindex="0" id="panel3" aria-labelledby="tab3" hidden>
 				<p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>	
 			</div>
 		</div>
